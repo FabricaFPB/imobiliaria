@@ -1,0 +1,137 @@
+header {
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.header-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff6600;
+    text-decoration: none;
+}
+
+.logo i {
+    font-size: 20px;
+}
+
+.btn-entrar {
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn-entrar:hover {
+    background: #e55500;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+.search-form-header {
+    display: flex;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 25px;
+    overflow: hidden;
+    border: 2px solid #e9ecef;
+    transition: border-color 0.3s;
+    height: 44px;
+}
+
+.search-form-header:focus-within {
+    border-color: #ff6600;
+}
+
+.search-input {
+    flex: 1;
+    border: none;
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    height: 100%;
+}
+
+.search-btn {
+    background: #ff6600;
+    color: white;
+    border: none;
+    width: 48px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 16px;
+}
+
+.search-btn:hover {
+    background: #e55500;
+}
+
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .search-bar {
+        flex: 1;
+        max-width: 400px;
+        margin: 0 20px;
+        order: 0;
+    }
+    
+    .logo {
+        font-size: 20px;
+        margin-right: auto;
+    }
+    
+    .logo i {
+        font-size: 24px;
+    }
+    
+    .btn-entrar {
+        padding: 10px 20px;
+        border-radius: 25px;
+        font-size: 16px;
+        margin-left: auto;
+    }
+}
+
+@media (min-width: 992px) {
+    .search-bar {
+        max-width: 450px;
+    }
+}

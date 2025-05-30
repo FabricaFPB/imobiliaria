@@ -4,8 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Imobiliária Premium - Encontre seu lar ideal</title>
+    <title>Imobi - Encontre seu lar ideal</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -13,15 +15,11 @@
     <header>
         <div class="container">
             <div class="header-content">
-                <div class="header-row">
-                    <div class="logo">
-                        <i class="fas fa-home"></i>
-                        <span>Imobi</span>
-                    </div>
-                    <button class="btn-entrar">
-                        <i class="fas fa-user"></i>
-                    </button>
-                </div>
+                <a href="index.html" class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Imobi</span>
+                </a>
+
                 <div class="search-bar">
                     <form class="search-form-header">
                         <input type="text" placeholder="Buscar imóveis..." class="search-input">
@@ -30,6 +28,10 @@
                         </button>
                     </form>
                 </div>
+
+                <button class="btn-entrar">
+                    <i class="fas fa-user"></i>
+                </button>
             </div>
         </div>
     </header>
@@ -75,6 +77,7 @@
                                     </select>
                                 </div>
                                 <button type="submit" class="btn-buscar">Buscar imóvel!</button>
+                                <a href="imoveis.html" class="btn-ver-todos">Ver Todos os Imóveis</a>
                             </form>
                         </div>
                     </div>

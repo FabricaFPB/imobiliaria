@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imóveis - Imobi</title>
+    <link rel="stylesheet" href="css/grid.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/imoveis.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <i class="fas fa-home"></i>
+                    <span>Imobi</span>
+                </a>
+
+                <div class="search-bar">
+                    <form class="search-form-header">
+                        <input type="text" placeholder="Buscar imóveis..." class="search-input">
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <button class="btn-entrar">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html"><i class="fas fa-home"></i> Início</a>
+            <span><i class="fas fa-chevron-right"></i></span>
+            <span>Imóveis</span>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <div class="container">
+            <div class="page-header">
+                <h1>Imóveis Disponíveis</h1>
+                <p>Encontre o imóvel dos seus sonhos</p>
+            </div>
+
+            <div class="filters-section">
+                <div class="filters-header">
+                    <h3>Filtrar Imóveis</h3>
+                    <button class="btn-toggle-filters">
+                        <i class="fas fa-filter"></i>
+                        Filtros
+                    </button>
+                </div>
+
+                <div class="filters-content">
+                    <div class="row">
+                        <div class="col-6 col-md-3">
+                            <select class="form-control">
+                                <option>Tipo</option>
+                                <option>Casa</option>
+                                <option>Apartamento</option>
+                                <option>Terreno</option>
+                                <option>Comercial</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-control">
+                                <option>Finalidade</option>
+                                <option>Venda</option>
+                                <option>Aluguel</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-control">
+                                <option>Quartos</option>
+                                <option>1+</option>
+                                <option>2+</option>
+                                <option>3+</option>
+                                <option>4+</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-control">
+                                <option>Preço</option>
+                                <option>Até R$ 200.000</option>
+                                <option>R$ 200.000 - R$ 500.000</option>
+                                <option>R$ 500.000 - R$ 1.000.000</option>
+                                <option>Acima de R$ 1.000.000</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <button class="btn-filter">
+                                <i class="fas fa-search"></i>
+                                Aplicar Filtros
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="results-header">
+                <div class="results-info">
+                    <span class="results-count">48 imóveis encontrados</span>
+                </div>
+                <div class="view-options">
+                    <button class="view-btn active" data-view="grid">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="view-btn" data-view="list">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="properties-grid" id="properties-container">
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=400&h=250&fit=crop"
+                            alt="Casa moderna" loading="lazy">
+                        <div class="property-badges">
+                            <span class="badge badge-sale">Venda</span>
+                        </div>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 850.000</div>
+                        <h3 class="property-title">Casa Moderna com Piscina</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Bairro Jardins, São Paulo - SP
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 3 quartos</span>
+                            <span><i class="fas fa-bath"></i> 2 banheiros</span>
+                            <span><i class="fas fa-car"></i> 2 vagas</span>
+                            <span><i class="fas fa-ruler-combined"></i> 180 m²</span>
+                        </div>
+                        <button class="btn-view-property">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=400&h=250&fit=crop"
+                            alt="Apartamento luxuoso" loading="lazy">
+                        <div class="property-badges">
+                            <span class="badge badge-rent">Aluguel</span>
+                        </div>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 3.500<span>/mês</span></div>
+                        <h3 class="property-title">Apartamento Alto Padrão</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Vila Madalena, São Paulo - SP
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 2 quartos</span>
+                            <span><i class="fas fa-bath"></i> 1 banheiro</span>
+                            <span><i class="fas fa-car"></i> 1 vaga</span>
+                            <span><i class="fas fa-ruler-combined"></i> 95 m²</span>
+                        </div>
+                        <button class="btn-view-property">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=400&h=250&fit=crop"
+                            alt="Casa térrea" loading="lazy">
+                        <div class="property-badges">
+                            <span class="badge badge-sale">Venda</span>
+                        </div>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 650.000</div>
+                        <h3 class="property-title">Casa Térrea com Quintal</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Brooklin, São Paulo - SP
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 4 quartos</span>
+                            <span><i class="fas fa-bath"></i> 3 banheiros</span>
+                            <span><i class="fas fa-car"></i> 2 vagas</span>
+                            <span><i class="fas fa-ruler-combined"></i> 220 m²</span>
+                        </div>
+                        <button class="btn-view-property">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=250&fit=crop"
+                            alt="Apartamento compacto" loading="lazy">
+                        <div class="property-badges">
+                            <span class="badge badge-rent">Aluguel</span>
+                        </div>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 2.200<span>/mês</span></div>
+                        <h3 class="property-title">Studio Moderno Centro</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Centro, São Paulo - SP
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 1 quarto</span>
+                            <span><i class="fas fa-bath"></i> 1 banheiro</span>
+                            <span><i class="fas fa-car"></i> 0 vagas</span>
+                            <span><i class="fas fa-ruler-combined"></i> 45 m²</span>
+                        </div>
+                        <button class="btn-view-property">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?w=400&h=250&fit=crop"
+                            alt="Casa de luxo" loading="lazy">
+                        <div class="property-badges">
+                            <span class="badge badge-sale">Venda</span>
+                        </div>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 1.200.000</div>
+                        <h3 class="property-title">Casa de Luxo com Vista</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Morumbi, São Paulo - SP
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 5 quartos</span>
+                            <span><i class="fas fa-bath"></i> 4 banheiros</span>
+                            <span><i class="fas fa-car"></i> 4 vagas</span>
+                            <span><i class="fas fa-ruler-combined"></i> 350 m²</span>
+                        </div>
+                        <button class="btn-view-property">Ver Detalhes</button>
+                    </div>
+                </div>
+
+                <div class="property-card">
+                    <div class="property-image">
+                        <img src="https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=400&h=250&fit=crop"
+                            alt="Apartamento familiar" loading="lazy">
+                        <div class="property-badges">
+                            <span class="badge badge-rent">Aluguel</span>
+                        </div>
+                        <button class="btn-favorite">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    <div class="property-content">
+                        <div class="property-price">R$ 4.800<span>/mês</span></div>
+                        <h3 class="property-title">Apartamento Familiar</h3>
+                        <p class="property-location">
+                            <i class="fas fa-map-marker-alt"></i>
+                            Perdizes, São Paulo - SP
+                        </p>
+                        <div class="property-details">
+                            <span><i class="fas fa-bed"></i> 3 quartos</span>
+                            <span><i class="fas fa-bath"></i> 2 banheiros</span>
+                            <span><i class="fas fa-car"></i> 2 vagas</span>
+                            <span><i class="fas fa-ruler-combined"></i> 120 m²</span>
+                        </div>
+                        <button class="btn-view-property">Ver Detalhes</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <button class="btn-pagination" disabled>
+                    <i class="fas fa-chevron-left"></i>
+                    Anterior
+                </button>
+                <span class="pagination-info">Página 1 de 8</span>
+                <button class="btn-pagination">
+                    Próxima
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-home"></i>
+                        <span>Imobi</span>
+                    </div>
+                    <p>Encontre o imóvel dos seus sonhos com a melhor imobiliária.</p>
+                    <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="imoveis.html">Imóveis</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p><i class="fas fa-phone"></i> (11) 9999-9999</p>
+                    <p><i class="fas fa-envelope"></i> contato@imobi.com.br</p>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo, SP</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Imobi. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/imoveis.js"></script>
+</body>
+
+</html>

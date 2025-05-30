@@ -1,4 +1,3 @@
-/* Reset e configurações base */
 * {
     margin: 0;
     padding: 0;
@@ -13,214 +12,6 @@ body {
     color: #333;
 }
 
-header {
-    background: #fff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    align-items: stretch;
-}
-
-.header-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.menu {
-    font-size: 24px;
-    cursor: pointer;
-    color: #666;
-    transition: color 0.3s;
-}
-
-.menu:hover {
-    color: #ff6600;
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 18px;
-    font-weight: bold;
-    color: #ff6600;
-}
-
-.logo i {
-    font-size: 20px;
-}
-
-.search-bar {
-    width: 100%;
-    order: 3;
-}
-
-.search-form-header:focus-within {
-    border-color: #ff6600;
-}
-
-.search-form-header {
-    display: flex;
-    align-items: center;
-    background: #f8f9fa;
-    border-radius: 25px;
-    overflow: hidden;
-    border: 2px solid #e9ecef;
-    transition: border-color 0.3s;
-    height: 44px; 
-    margin-bottom: 2vh;
-}
-
-.search-input {
-    flex: 1;
-    border: none;
-    padding: 12px 20px;
-    background: transparent;
-    outline: none;
-    font-size: 14px;
-    height: 100%;
-}
-
-.search-btn {
-    background: #ff6600;
-    color: white;
-    border: none;
-    width: 48px;
-    height: 44px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0; 
-    cursor: pointer;
-    transition: background 0.3s;
-    font-size: 18px;
-    padding: 0;
-}
-
-.search-btn:hover {
-    background: #e55a00;
-}
-
-.btn-entrar {
-    background: #ff6600;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-weight: 600;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    transition: background 0.3s, color 0.3s;
-}
-
-@media (min-width: 768px) {
-    .header-content {
-        flex-direction: row;
-        gap: 15px;
-    }
-    
-    .search-bar {
-        flex: 1;
-        max-width: 400px;
-        min-width: 250px;
-        order: 0;
-    }
-    
-    .logo {
-        font-size: 20px;
-    }
-    
-    .logo i {
-        font-size: 24px;
-    }
-    
-    .btn-entrar {
-        padding: 10px 20px;
-        border-radius: 25px;
-        font-size: 16px;
-        gap: 8px;
-    }
-}
-
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
-}
-
-[class^="col-"] {
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-}
-
-.col-12, .col-6, .col-4, .col-3, .col-2, .col-1,
-.col-md-12, .col-md-6, .col-md-4, .col-md-3,
-.col-lg-12, .col-lg-6, .col-lg-4, .col-lg-3 { 
-    width: 100%; 
-    margin-bottom: 15px;
-}
-
-@media (min-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-    
-    .row {
-        margin-left: -15px;
-        margin-right: -15px;
-    }
-    
-    [class^="col-"] {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-    
-    .col-12 { width: 100%; }
-    .col-6 { width: 50%; }
-    .col-4 { width: 33.3333%; }
-    .col-3 { width: 25%; }
-    .col-2 { width: 16.6667%; }
-    .col-1 { width: 8.3333%; }
-    
-    .col-md-12 { width: 100%; }
-    .col-md-6 { width: 50%; }
-    .col-md-4 { width: 33.3333%; }
-    .col-md-3 { width: 25%; }
-}
-
-@media (min-width: 992px) {
-    .col-lg-12 { width: 100%; }
-    .col-lg-6 { width: 50%; }
-    .col-lg-4 { width: 33.3333%; }
-    .col-lg-3 { width: 25%; }
-}
 
 .hero-banner {
     background: linear-gradient(135deg, #ff6600, #ff8533);
@@ -244,12 +35,12 @@ header {
     .hero-banner {
         padding: 60px 0;
     }
-    
+
     .banner-content h1 {
         font-size: 2.5rem;
         margin-bottom: 20px;
     }
-    
+
     .banner-content p {
         font-size: 1.1rem;
     }
@@ -259,11 +50,11 @@ header {
     .hero-banner {
         padding: 80px 0;
     }
-    
+
     .banner-content h1 {
         font-size: 3rem;
     }
-    
+
     .banner-content p {
         font-size: 1.2rem;
     }
@@ -276,7 +67,7 @@ header {
 .search-card {
     background: white;
     border-radius: 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     padding: 20px;
     margin: 0 10px;
 }
@@ -357,7 +148,8 @@ header {
     gap: 15px;
 }
 
-.select-price, .select-rooms {
+.select-price,
+.select-rooms {
     padding: 12px;
     border-radius: 10px;
     border: 2px solid #e9ecef;
@@ -366,7 +158,8 @@ header {
     transition: border-color 0.3s;
 }
 
-.select-price:focus, .select-rooms:focus {
+.select-price:focus,
+.select-rooms:focus {
     border-color: #ff6600;
     outline: none;
 }
@@ -381,10 +174,31 @@ header {
     font-weight: 600;
     cursor: pointer;
     transition: background 0.3s, color 0.3s;
+    margin-bottom: 10px;
 }
 
 .btn-buscar:hover {
     background: #e55a00;
+}
+
+.btn-ver-todos {
+    display: block;
+    background: transparent;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.btn-ver-todos:hover {
+    background: #ff6600;
+    color: white;
 }
 
 .imobiliarias-section {
@@ -403,14 +217,14 @@ header {
 .imobiliaria-card {
     background: white;
     border-radius: 15px;
-    box-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     overflow: hidden;
     transition: box-shadow 0.3s;
 }
 
 .imobiliaria-card:hover {
-    box-shadow: 10px 10px 30px rgba(0,0,0,0.15);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .carrossel-img {
@@ -434,17 +248,21 @@ header {
     padding: 15px;
 }
 
-.card-info h1{
-    color:#111;
+.card-info h1 {
+    color: #111;
 }
 
-.desc, .qtd-imoveis, .local {
+.desc,
+.qtd-imoveis,
+.local {
     margin-bottom: 12px;
     line-height: 1.4;
     font-size: 14px;
 }
 
-.desc strong, .qtd-imoveis strong, .local strong {
+.desc strong,
+.qtd-imoveis strong,
+.local strong {
     color: #333;
 }
 
@@ -518,103 +336,65 @@ header {
 
 
 @media (min-width: 768px) {
-    .container {
-        position: relative; 
-    }
-    
-    .header-content {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 15px 0;
-        position: relative;
-    }
-    
-    .header-row {
-        display: flex;
-        justify-content: space-between;
-        width: 100%; 
-    }
-    
-    .search-bar {
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        width: 40%;
-        max-width: 400px;
-        min-width: 300px;
-        z-index: 10;
-        order: initial;
-    }
-    
-    .search-form-header {
-        margin-bottom: 0;
-    }
-    
-    .logo {
-        font-size: 20px;
-        z-index: 20;
-    }
-    
-    .logo i {
-        font-size: 24px;
-    }
-    
-    .btn-entrar {
-        padding: 10px 20px;
-        border-radius: 25px;
-        font-size: 16px;
-        gap: 8px;
-        z-index: 20;
-    }
-}
-    
+
     .search-section {
         padding: 45px 0;
     }
-    
+
     .search-card {
         padding: 25px;
         margin: 0 auto;
         max-width: 600px;
     }
-    
+
     .card-title {
         font-size: 1.3rem;
         margin-bottom: 18px;
     }
-    
+
     .tabs {
         gap: 8px;
         margin-bottom: 22px;
     }
-    
+
     .tab {
         padding: 9px 18px;
         font-size: 15px;
     }
-    
+
     .input-group {
         padding: 13px;
     }
-    
+
     .search-options {
         flex-direction: row;
         gap: 15px;
     }
-    
-    .select-price, .select-rooms {
+
+    .select-price,
+    .select-rooms {
         flex: 1;
         padding: 13px;
     }
 }
 
 @media (min-width: 992px) {
-    .col-lg-12 { width: 100%; }
-    .col-lg-6 { width: 50%; }
-    .col-lg-4 { width: 33.3333%; }
-    .col-lg-3 { width: 25%; }
-    
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-4 {
+        width: 33.3333%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
     .search-bar {
         width: 35%;
         max-width: 450px;
@@ -623,235 +403,80 @@ header {
     .search-section {
         padding: 60px 0;
     }
-    
+
     .search-card {
         padding: 30px;
     }
-    
+
     .card-title {
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
-    
+
     .tabs {
         gap: 10px;
         margin-bottom: 25px;
     }
-    
+
     .tab {
         padding: 10px 20px;
         font-size: 16px;
     }
-    
+
     .input-group {
         padding: 15px;
     }
-    
-    .select-price, .select-rooms {
+
+    .select-price,
+    .select-rooms {
         padding: 15px;
     }
-    
+
     .imobiliarias-section {
         padding: 60px 0;
     }
-    
+
     .section-title {
         font-size: 2rem;
         margin-bottom: 40px;
     }
-    
+
     .imobiliaria-card {
         margin-bottom: 30px;
     }
-    
+
     .carrossel-img {
         height: 200px;
         font-size: 14px;
     }
-    
+
     .carrossel-img i {
         font-size: 40px;
         margin-bottom: 10px;
     }
-    
+
     .card-info {
         padding: 20px;
     }
-    
-    .desc, .qtd-imoveis, .local {
+
+    .desc,
+    .qtd-imoveis,
+    .local {
         margin-bottom: 15px;
         font-size: 16px;
     }
-    
+
     .contact-row {
         margin-top: 20px;
     }
-    
+
     .input-tel {
         padding: 10px;
         font-size: 14px;
     }
-    
+
     .btn-saiba {
         padding: 10px 15px;
         font-size: 14px;
     }
 }
-
-footer {
-    background: #343a40;
-    color: white;
-    padding: 30px 0 15px;
-}
-
-.footer-section {
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.footer-section h3 {
-    margin-bottom: 12px;
-    color: #ff6600;
-    font-size: 1.1rem;
-}
-
-.footer-section ul {
-    list-style: none;
-}
-
-.footer-section ul li {
-    margin-bottom: 6px;
-}
-
-.footer-section ul li a {
-    color: #ccc;
-    text-decoration: none;
-    transition: color 0.3s;
-    font-size: 14px;
-}
-
-.footer-section ul li a:hover {
-    color: #ff6600;
-}
-
-.footer-section p {
-    margin-bottom: 8px;
-    color: #ccc;
-    font-size: 14px;
-}
-
-.social-links {
-    display: flex;
-    gap: 12px;
-    margin-top: 12px;
-    justify-content: center;
-}
-
-.social-links a {
-    color: #ccc;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #ff6600;
-}
-
-.footer-bottom {
-    border-top: 1px solid #495057;
-    padding-top: 15px;
-    margin-top: 25px;
-    text-align: center;
-    color: #6c757d;
-    font-size: 13px;
-}
-
-@media (min-width: 768px) {
-    footer {
-        padding: 35px 0 18px;
-    }
-    
-    .footer-section {
-        margin-bottom: 28px;
-        text-align: left;
-    }
-    
-    .footer-section h3 {
-        margin-bottom: 14px;
-        font-size: 1.15rem;
-    }
-    
-    .footer-section ul li {
-        margin-bottom: 7px;
-    }
-    
-    .footer-section ul li a {
-        font-size: 15px;
-    }
-    
-    .footer-section p {
-        margin-bottom: 9px;
-        font-size: 15px;
-    }
-    
-    .social-links {
-        gap: 14px;
-        margin-top: 14px;
-        justify-content: flex-start;
-    }
-    
-    .social-links a {
-        font-size: 19px;
-    }
-    
-    .footer-bottom {
-        padding-top: 18px;
-        margin-top: 28px;
-        font-size: 14px;
-    }
-}
-
-@media (min-width: 992px) {
-    footer {
-        padding: 40px 0 20px;
-    }
-    
-    .footer-section {
-        margin-bottom: 30px;
-    }
-    
-    .footer-section h3 {
-        margin-bottom: 15px;
-        font-size: 1.2rem;
-    }
-    
-    .footer-section ul li {
-        margin-bottom: 8px;
-    }
-    
-    .footer-section ul li a {
-        font-size: 16px;
-    }
-    
-    .footer-section p {
-        margin-bottom: 10px;
-        font-size: 16px;
-    }
-    
-    .social-links {
-        gap: 15px;
-        margin-top: 15px;
-    }
-    
-    .social-links a {
-        font-size: 20px;
-    }
-    
-    .footer-bottom {
-        padding-top: 20px;
-        margin-top: 30px;
-        font-size: 14px;
-    }
-}
-
-
